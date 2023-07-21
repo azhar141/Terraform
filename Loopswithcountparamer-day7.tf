@@ -4,7 +4,7 @@ resource "aws_iam_user" "example" {
 }
 
 for (i = 0; i < 3; i++) {
-  resource "aws_iam_user" "example" {
+  resource "aws_iam_user" "example" {   #hellow-world
     name = "devops.${i}" 
   }
 }
